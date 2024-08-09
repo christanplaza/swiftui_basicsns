@@ -1,0 +1,54 @@
+# Xcode specific
+.DS_Store
+*/.DS_Store
+build/
+DerivedData/
+*.xcuserstate
+*.xcworkspace
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# Swift Package Manager
+.swiftpm/xcode/xcshareddata/WorkspaceSettings.xcsettings
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Firebase
+GoogleService-Info.plist
+
+# General
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+*.orig
+*.swp
+*.xcuserdatad
+*~.nib
+*~.moved-aside
+*.swp
+*.swo
+*.DAT
+*.tmp
+*.ide.workspace
+*.lock
+
+# Xcode breakpoints
+*.xcscmblueprint
+*.breakpoints
+
+# xcbackups
+*.xcbackups
+
