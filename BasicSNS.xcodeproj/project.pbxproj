@@ -11,6 +11,7 @@
 		E23999AB2C66429A00345412 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23999AA2C66429A00345412 /* ContentView.swift */; };
 		E23999AD2C66429D00345412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E23999AC2C66429D00345412 /* Assets.xcassets */; };
 		E23999B12C66429D00345412 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E23999B02C66429D00345412 /* Preview Assets.xcassets */; };
+		E23999B92C66445700345412 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23999B82C66445700345412 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		E23999AC2C66429D00345412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E23999AE2C66429D00345412 /* BasicSNS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BasicSNS.entitlements; sourceTree = "<group>"; };
 		E23999B02C66429D00345412 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E23999B82C66445700345412 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		E23999A72C66429A00345412 /* BasicSNS */ = {
 			isa = PBXGroup;
 			children = (
+				E23999B72C66443000345412 /* Views */,
 				E23999A82C66429A00345412 /* BasicSNSApp.swift */,
 				E23999AA2C66429A00345412 /* ContentView.swift */,
 				E23999AC2C66429D00345412 /* Assets.xcassets */,
@@ -67,6 +70,14 @@
 				E23999B02C66429D00345412 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E23999B72C66443000345412 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E23999B82C66445700345412 /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23999B92C66445700345412 /* LoginView.swift in Sources */,
 				E23999AB2C66429A00345412 /* ContentView.swift in Sources */,
 				E23999A92C66429A00345412 /* BasicSNSApp.swift in Sources */,
 			);
