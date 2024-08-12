@@ -1,24 +1,40 @@
-//
-//  ContentView.swift
-//  BasicSNS
-//
-//  Created by mbp on 8/9/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    let sampleUser = User(
+        id: "1",
+        username: "Jane Doe",
+        bio: "iOS Developer and technology enjoyer.",
+        profileImage: Image(systemName: "person.circle.fill")
+    )
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                Text("Welcome to the App")
+                    .font(.largeTitle)
+                    .padding()
+
+                NavigationLink(destination: ProfileView(user: sampleUser)) {
+                    Text("View Profile")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(8)
+                }
+                .padding()
+                
+                Spacer()
+            }
+            .navigationTitle("Home")
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

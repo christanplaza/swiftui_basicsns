@@ -1,41 +1,51 @@
 //
-//  LoginView.swift
+//  SignupView.swift
 //  BasicSNS
 //
-//  Created by mbp on 8/9/24.
+//  Created by mbp on 8/12/24.
 //
 
 import SwiftUI
 
-struct LoginView: View {
+struct SignupView: View {
     @State private var username: String = ""
     @State private var password: String = ""
+    @State private var password_confirm: String = ""
+    @State private var name: String = ""
     
     var body: some View {
         VStack {
-            Text("Login")
+            Text("Sign Up")
                 .font(.largeTitle)
                 .padding(.bottom, 40)
             VStack(alignment: .leading) {
+                Text("Full Name")
+                TextField("", text: $name)
+                    .padding()
+                    .background(Color(.secondarySystemBackground))
+                    .cornerRadius(8.0)
                 Text("Username")
-                    .font(.headline)
                 TextField("", text: $username)
                     .padding()
                     .background(Color(.secondarySystemBackground))
                     .cornerRadius(8.0)
                     .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                 Text("Password")
-                    .font(.headline)
                 SecureField("", text: $password)
+                    .padding()
+                    .background(Color(.secondarySystemBackground))
+                    .cornerRadius(8.0)
+                Text("Confirm Password")
+                SecureField("", text: $password_confirm)
                     .padding()
                     .background(Color(.secondarySystemBackground))
                     .cornerRadius(8.0)
             }
             
             Button(action: {
-                print("Login Button Pressed")
+                print("Signup Button Pressed")
             }) {
-                Text("Login")
+                Text("Sign Up")
                     .font(.headline)
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
@@ -44,10 +54,11 @@ struct LoginView: View {
                     .cornerRadius(8.0)
             }
             .padding(.top, 20)
+            
             Button(action: {
-                print("Redirect to Signup")
+                print("Redirect to Login")
             }) {
-                Text("Don't have an account yet?")
+                Text("Already have an account?")
                     .font(.subheadline)
                     .foregroundColor(.blue)
                     .frame(maxWidth: .infinity, alignment: .center)
@@ -59,13 +70,10 @@ struct LoginView: View {
 
             
             Spacer()
-        }
-        .padding()
+        }.padding()
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
-    }
+#Preview {
+    SignupView()
 }

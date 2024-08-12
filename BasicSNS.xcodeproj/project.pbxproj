@@ -12,6 +12,11 @@
 		E23999AD2C66429D00345412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E23999AC2C66429D00345412 /* Assets.xcassets */; };
 		E23999B12C66429D00345412 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E23999B02C66429D00345412 /* Preview Assets.xcassets */; };
 		E23999B92C66445700345412 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23999B82C66445700345412 /* LoginView.swift */; };
+		E27736622C69EAD400DB3744 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27736612C69EAD400DB3744 /* SignupView.swift */; };
+		E27736642C69F5F200DB3744 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27736632C69F5F200DB3744 /* HomeView.swift */; };
+		E27736692C6A048100DB3744 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27736682C6A048100DB3744 /* Post.swift */; };
+		E277366B2C6A095B00DB3744 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277366A2C6A095B00DB3744 /* ProfileView.swift */; };
+		E277366D2C6A09F300DB3744 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E277366C2C6A09F300DB3744 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		E23999AE2C66429D00345412 /* BasicSNS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BasicSNS.entitlements; sourceTree = "<group>"; };
 		E23999B02C66429D00345412 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E23999B82C66445700345412 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E27736612C69EAD400DB3744 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		E27736632C69F5F200DB3744 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E27736682C6A048100DB3744 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E277366A2C6A095B00DB3744 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E277366C2C6A09F300DB3744 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 		E23999A72C66429A00345412 /* BasicSNS */ = {
 			isa = PBXGroup;
 			children = (
+				E27736652C6A046700DB3744 /* Models */,
 				E23999B72C66443000345412 /* Views */,
 				E23999A82C66429A00345412 /* BasicSNSApp.swift */,
 				E23999AA2C66429A00345412 /* ContentView.swift */,
@@ -76,8 +87,20 @@
 			isa = PBXGroup;
 			children = (
 				E23999B82C66445700345412 /* LoginView.swift */,
+				E27736612C69EAD400DB3744 /* SignupView.swift */,
+				E27736632C69F5F200DB3744 /* HomeView.swift */,
+				E277366A2C6A095B00DB3744 /* ProfileView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E27736652C6A046700DB3744 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E27736682C6A048100DB3744 /* Post.swift */,
+				E277366C2C6A09F300DB3744 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27736622C69EAD400DB3744 /* SignupView.swift in Sources */,
 				E23999B92C66445700345412 /* LoginView.swift in Sources */,
 				E23999AB2C66429A00345412 /* ContentView.swift in Sources */,
+				E27736692C6A048100DB3744 /* Post.swift in Sources */,
+				E277366D2C6A09F300DB3744 /* User.swift in Sources */,
+				E27736642C69F5F200DB3744 /* HomeView.swift in Sources */,
+				E277366B2C6A095B00DB3744 /* ProfileView.swift in Sources */,
 				E23999A92C66429A00345412 /* BasicSNSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
